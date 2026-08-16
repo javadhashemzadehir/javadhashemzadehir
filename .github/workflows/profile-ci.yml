@@ -1,0 +1,43 @@
+name: Profile CI
+
+# Validates the profile README before it reaches the profile page: local asset
+# paths, theme variants, alt text, placeholder links, and SVG safety.
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'README.md'
+      - 'assets/**'
+      - 'scripts/**'
+      - '.github/workflows/profile-ci.yml'
+  pull_request:
+    paths:
+      - 'README.md'
+      - 'assets/**'
+      - 'scripts/**'
+  workflow_dispatch:
+
+# Read-only: this workflow inspects the repository and never writes to it.
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate profile README
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate profile
+        run: node scripts/validate-profile.mjs
