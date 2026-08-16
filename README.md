@@ -140,7 +140,7 @@ These days I read more economics, philosophy, and history than programming books
 
 **[javaddev.ir](https://javaddev.ir)** — personal site: writing, engineering notes, and selected work.
 
-**Jahat Digital** (`jahat.digital`) — web products, applications, design, and digital strategy. Founded and run by me.
+**[Jahat Digital](https://jahat.digital)** — web products, applications, design, and digital strategy. Founded and run by me.
 
 <!-- TODO: both sites are pre-launch. Once jahat.digital is live, activate the link below and drop the plain-text domain above. -->
 <!-- **[Jahat Digital](https://jahat.digital)** — web products, applications, design, and digital strategy. Founded and run by me. -->
