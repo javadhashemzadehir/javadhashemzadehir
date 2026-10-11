@@ -9,7 +9,7 @@
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.instagram.com/javadhashemzadeh.ir"><b>Instagram</b></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/javad-hashem"><b>GitHub</b></a>
+  <a href="https://github.com/javadhashemzadehir"><b>GitHub</b></a>
   <!-- TODO: replace MOCK_LINKEDIN_URL with the real profile URL, then uncomment the next line -->
   <!-- &nbsp;&nbsp;&nbsp;&nbsp; <a href="MOCK_LINKEDIN_URL"><b>LinkedIn</b></a> -->
 </div>
@@ -132,7 +132,7 @@ Trade-offs are the actual work: consistency against latency, flexibility against
 
 **Phone:** [+98 937 067 8064](tel:+989370678064)
 
-**GitHub:** [github.com/javad-hashem](https://github.com/javad-hashem)
+**GitHub:** [github.com/javadhashemzadehir](https://github.com/javadhashemzadehir)
 
 <!-- TODO: add LinkedIn once MOCK_LINKEDIN_URL is a real profile URL -->
 
