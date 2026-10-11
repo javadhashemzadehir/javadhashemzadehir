@@ -1,63 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" role="img" aria-labelledby="heroTitle heroDesc">
-  <title id="heroTitle">Javad Hashemzadeh, Full-Stack Engineer and System Builder</title>
-  <desc id="heroDesc">From interface to infrastructure, and toward systems that reason about data, incentives, and uncertainty. A layered diagram shows interface, services, and persistence tiers connected by a data-flow path.</desc>
+  <title id="heroTitle">Javad Hashemzadeh, freelance software developer</title>
+  <desc id="heroDesc">A Persepolis-inspired nameplate: stone columns, a gold spear motif for code as craft, and mountains under a desert sunset.</desc>
 
   <defs>
-    <pattern id="heroDots" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="1.5" cy="1.5" r="1.4" fill="#263041"/>
-    </pattern>
-    <linearGradient id="heroFade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0.28" stop-color="#000000"/>
-      <stop offset="1" stop-color="#FFFFFF"/>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A1A12"/>
+      <stop offset="0.55" stop-color="#1A1410"/>
+      <stop offset="1" stop-color="#0F0C0A"/>
     </linearGradient>
-    <mask id="heroGridMask">
-      <rect width="900" height="380" fill="url(#heroFade)"/>
-    </mask>
+    <linearGradient id="goldBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8A6A1E"/>
+      <stop offset="0.5" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#8A6A1E"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A3F32"/>
+      <stop offset="1" stop-color="#2C241C"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#8B2E1A"/>
+      <stop offset="0.55" stop-color="#E07A3A"/>
+      <stop offset="1" stop-color="#F0C060"/>
+    </linearGradient>
     <clipPath id="heroCard">
       <rect x="0" y="0" width="900" height="380" rx="16"/>
     </clipPath>
   </defs>
 
-  <rect x="0" y="0" width="900" height="380" rx="16" fill="#0D1117"/>
+  <rect x="0" y="0" width="900" height="380" rx="16" fill="url(#sky)"/>
 
   <g clip-path="url(#heroCard)">
-    <rect width="900" height="380" fill="url(#heroDots)" mask="url(#heroGridMask)" opacity="0.9"/>
+    <!-- distant mountains -->
+    <path d="M0 250 L90 190 L160 230 L240 170 L330 220 L410 165 L500 225 L590 175 L680 230 L760 185 L850 235 L900 210 L900 380 L0 380 Z" fill="#1C1612" opacity="0.95"/>
+    <path d="M0 280 L120 230 L210 265 L300 215 L420 270 L520 225 L640 275 L760 230 L900 270 L900 380 L0 380 Z" fill="#241C16" opacity="0.9"/>
 
-    <rect x="60" y="100" width="36" height="3" rx="1.5" fill="#7AA2F7"/>
-    <text x="60" y="134" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" letter-spacing="2.4" fill="#7AA2F7">FULL-STACK ENGINEER &#183; SYSTEM BUILDER</text>
-    <text x="60" y="196" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="50" font-weight="700" letter-spacing="-0.8" fill="#E9EFF6">Javad Hashemzadeh</text>
-    <text x="60" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#98A5B6">From interface to infrastructure &#8212; and toward systems</text>
-    <text x="60" y="268" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#98A5B6">that reason about data, incentives, and uncertainty.</text>
+    <!-- terrace floor -->
+    <rect x="0" y="300" width="900" height="80" fill="#1A1511"/>
+    <line x1="0" y1="300" x2="900" y2="300" stroke="#3D3428" stroke-width="2"/>
+    <line x1="0" y1="318" x2="900" y2="318" stroke="#2E2620" stroke-width="1"/>
 
-    <rect x="616" y="76" width="236" height="228" rx="14" fill="none" stroke="#222B38" stroke-width="1" stroke-dasharray="4 5"/>
+    <!-- left column -->
+    <rect x="628" y="118" width="28" height="182" fill="url(#stone)"/>
+    <rect x="622" y="108" width="40" height="14" rx="2" fill="#5A4C3A"/>
+    <ellipse cx="642" cy="104" rx="22" ry="8" fill="#6B5A44"/>
+    <ellipse cx="632" cy="100" rx="8" ry="5" fill="#7A684E"/>
+    <ellipse cx="652" cy="100" rx="8" ry="5" fill="#7A684E"/>
+    <rect x="624" y="292" width="36" height="10" rx="2" fill="#4A3F32"/>
 
-    <rect x="632" y="96" width="204" height="52" rx="10" fill="#131A24" stroke="#222B38" stroke-width="1"/>
-    <text x="648" y="127" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" letter-spacing="1.4" fill="#98A5B6">INTERFACE</text>
-    <rect x="772" y="116" width="12" height="12" rx="3" fill="#7AA2F7"/>
-    <rect x="790" y="116" width="12" height="12" rx="3" fill="#2C3746"/>
-    <rect x="808" y="116" width="12" height="12" rx="3" fill="#2C3746"/>
+    <!-- right column -->
+    <rect x="780" y="118" width="28" height="182" fill="url(#stone)"/>
+    <rect x="774" y="108" width="40" height="14" rx="2" fill="#5A4C3A"/>
+    <ellipse cx="794" cy="104" rx="22" ry="8" fill="#6B5A44"/>
+    <ellipse cx="784" cy="100" rx="8" ry="5" fill="#7A684E"/>
+    <ellipse cx="804" cy="100" rx="8" ry="5" fill="#7A684E"/>
+    <rect x="776" y="292" width="36" height="10" rx="2" fill="#4A3F32"/>
 
-    <rect x="632" y="164" width="204" height="52" rx="10" fill="#131A24" stroke="#222B38" stroke-width="1"/>
-    <text x="648" y="195" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" letter-spacing="1.4" fill="#98A5B6">SERVICES</text>
-    <rect x="772" y="184" width="12" height="12" rx="3" fill="#2C3746"/>
-    <rect x="790" y="184" width="12" height="12" rx="3" fill="#2C3746"/>
-    <rect x="808" y="184" width="12" height="12" rx="3" fill="#2C3746"/>
+    <!-- lintel between columns -->
+    <rect x="656" y="128" width="124" height="10" fill="#5A4C3A"/>
+    <rect x="660" y="124" width="116" height="4" fill="#D4AF37" opacity="0.55"/>
 
-    <rect x="632" y="232" width="204" height="52" rx="10" fill="#131A24" stroke="#222B38" stroke-width="1"/>
-    <text x="648" y="263" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="10" letter-spacing="1.4" fill="#98A5B6">PERSISTENCE</text>
-    <rect x="772" y="252" width="12" height="12" rx="3" fill="#2C3746"/>
-    <rect x="790" y="252" width="12" height="12" rx="3" fill="#2C3746"/>
-    <rect x="808" y="252" width="12" height="12" rx="3" fill="#2C3746"/>
+    <!-- brazier + flame -->
+    <rect x="698" y="250" width="40" height="8" rx="2" fill="#3D3428"/>
+    <path d="M706 250 L710 230 L718 242 L730 224 L734 250 Z" fill="url(#flame)"/>
+    <ellipse cx="718" cy="258" rx="18" ry="6" fill="#2A221C"/>
 
-    <line x1="680" y1="148" x2="680" y2="164" stroke="#7AA2F7" stroke-width="1.5"/>
-    <line x1="680" y1="216" x2="680" y2="232" stroke="#7AA2F7" stroke-width="1.5"/>
-    <circle cx="680" cy="156" r="2.5" fill="#7AA2F7"/>
-    <circle cx="680" cy="224" r="2.5" fill="#7AA2F7"/>
+    <!-- spear / code motif -->
+    <line x1="560" y1="88" x2="560" y2="292" stroke="url(#goldBar)" stroke-width="3"/>
+    <polygon points="560,72 552,96 568,96" fill="#D4AF37"/>
+    <rect x="552" y="180" width="16" height="28" rx="2" fill="#8A6A1E" opacity="0.85"/>
+    <text x="576" y="198" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#D4AF37" opacity="0.8">&lt;/&gt;</text>
 
-    <line x1="780" y1="148" x2="780" y2="164" stroke="#2C3746" stroke-width="1.5"/>
-    <line x1="780" y1="216" x2="780" y2="232" stroke="#2C3746" stroke-width="1.5"/>
+    <!-- identity -->
+    <rect x="56" y="92" width="42" height="3" rx="1.5" fill="url(#goldBar)"/>
+    <text x="56" y="126" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="600" letter-spacing="2.8" fill="#D4AF37">FREELANCE DEVELOPER &#183; FREE WARRIOR</text>
+    <text x="56" y="188" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" letter-spacing="-0.6" fill="#EDE4D4">Javad Hashemzadeh</text>
+    <text x="56" y="236" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#B8A88E">The spear is code. The battlefield is technology.</text>
+    <text x="56" y="266" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#B8A88E">The discipline is engineering.</text>
   </g>
 
-  <rect x="0.5" y="0.5" width="899" height="379" rx="16" fill="none" stroke="#262E3A" stroke-width="1"/>
+  <rect x="0.5" y="0.5" width="899" height="379" rx="16" fill="none" stroke="#3D3428" stroke-width="1"/>
 </svg>

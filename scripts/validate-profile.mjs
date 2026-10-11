@@ -57,23 +57,11 @@ const live = stripComments(readme);
 // --- 1. Required sections --------------------------------------------------
 
 const REQUIRED_SECTIONS = [
-<<<<<<< HEAD
   '⚔️ About',
   '🗡️ Skills',
   '🏛️ Projects',
   '📜 Philosophy',
   '🦅 Contact',
-=======
-  'About',
-  'Now',
-  'What I Build',
-  'Stack',
-  'How I Think About Software',
-  'The Path So Far',
-  'Beyond Code',
-  'Elsewhere',
-  'Connect',
->>>>>>> db97632ad8000e4ae9082efed9caca4a54d5df46
 ];
 
 const headings = [...live.matchAll(/^##\s+(.+?)\s*$/gm)].map((m) => m[1]);
@@ -97,11 +85,7 @@ for (const m of live.matchAll(/!\[[^\]]*\]\(([^)\s]+)/g)) assetRefs.add(m[1]);
 const localAssets = [...assetRefs].filter((r) => !/^(https?:)?\/\//.test(r) && !r.startsWith('data:'));
 
 if (localAssets.length === 0) {
-<<<<<<< HEAD
-  fail('local-assets', 'README references no local assets; expected the banner and journey images');
-=======
-  fail('local-assets', 'README references no local assets; expected the hero and journey SVGs');
->>>>>>> db97632ad8000e4ae9082efed9caca4a54d5df46
+  fail('local-assets', 'README references no local assets; expected the banner, hero, and journey images');
 }
 
 for (const ref of localAssets) {
@@ -111,15 +95,12 @@ for (const ref of localAssets) {
   }
 }
 
-// --- 3. Both theme variants present ----------------------------------------
+// --- 3. Theme variants and banner present ----------------------------------
 
 for (const required of [
-<<<<<<< HEAD
   'assets/banner.png',
-=======
   'assets/hero-light.svg',
   'assets/hero-dark.svg',
->>>>>>> db97632ad8000e4ae9082efed9caca4a54d5df46
   'assets/journey-light.svg',
   'assets/journey-dark.svg',
 ]) {
@@ -253,6 +234,12 @@ for (const ref of localAssets.filter((r) => r.endsWith('.svg'))) {
 
 const email = live.match(/[\w.+-]+@[\w-]+\.[\w.]+/);
 if (email) fail('no-email', `email address exposed in README: ${email[0]}`);
+
+// --- 10b. No unresolved merge conflict markers -----------------------------
+
+if (/^<<<<<<<|^=======|^>>>>>>>/m.test(live)) {
+  fail('no-conflict-markers', 'README still contains unresolved merge conflict markers');
+}
 
 // --- 11. Balanced block-level HTML -----------------------------------------
 

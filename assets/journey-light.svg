@@ -1,87 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 556" width="700" height="556" role="img" aria-labelledby="journeyTitle journeyDesc">
   <title id="journeyTitle">Engineering path from 2019 to now</title>
-  <desc id="journeyDesc">A vertical progression beginning in 2019: programming foundations, frontend engineering, full-stack development, backend and architecture, products and systems, and now data, economics, and intelligent systems. Small squares accumulate at each stage to show layers being added to the system.</desc>
+  <desc id="journeyDesc">A vertical royal road from 2019 to now: programming foundations, frontend, full-stack, backend and architecture, products and systems, and study in data, economics, and systems.</desc>
 
   <defs>
-    <pattern id="journeyDots" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="1.5" cy="1.5" r="1.4" fill="#C9D3E0"/>
-    </pattern>
-    <linearGradient id="journeyFade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0.45" stop-color="#000000"/>
-      <stop offset="1" stop-color="#FFFFFF"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7F1E6"/>
+      <stop offset="1" stop-color="#EDE4D4"/>
     </linearGradient>
-    <mask id="journeyGridMask">
-      <rect width="700" height="556" fill="url(#journeyFade)"/>
-    </mask>
-    <linearGradient id="spineGradient" gradientUnits="userSpaceOnUse" x1="84" y1="80" x2="84" y2="462">
-      <stop offset="0" stop-color="#CBD5E1"/>
-      <stop offset="0.55" stop-color="#A8BEE8"/>
-      <stop offset="1" stop-color="#2B5FD9"/>
+    <linearGradient id="spine" gradientUnits="userSpaceOnUse" x1="84" y1="80" x2="84" y2="462">
+      <stop offset="0" stop-color="#C9B99A"/>
+      <stop offset="0.5" stop-color="#B8860B"/>
+      <stop offset="1" stop-color="#8A6A1E"/>
     </linearGradient>
     <clipPath id="journeyCard">
       <rect x="0" y="0" width="700" height="556" rx="16"/>
     </clipPath>
   </defs>
 
-  <rect x="0" y="0" width="700" height="556" rx="16" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="700" height="556" rx="16" fill="url(#bg)"/>
 
   <g clip-path="url(#journeyCard)">
-    <rect width="700" height="556" fill="url(#journeyDots)" mask="url(#journeyGridMask)" opacity="0.45"/>
+    <line x1="40" y1="40" x2="660" y2="40" stroke="#D9CBB0" stroke-width="1"/>
+    <line x1="40" y1="516" x2="660" y2="516" stroke="#D9CBB0" stroke-width="1"/>
 
-    <rect x="48" y="44" width="72" height="32" rx="16" fill="#F6F8FB" stroke="#C3D2F5" stroke-width="1"/>
-    <text x="84" y="65" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="0.4" fill="#2B5FD9">2019</text>
+    <rect x="48" y="44" width="72" height="32" rx="4" fill="#F3E6D0" stroke="#C9B99A" stroke-width="1"/>
+    <text x="84" y="65" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" letter-spacing="0.6" fill="#8A6A1E">2019</text>
 
-    <line x1="84" y1="80" x2="84" y2="462" stroke="url(#spineGradient)" stroke-width="2"/>
+    <line x1="84" y1="80" x2="84" y2="462" stroke="url(#spine)" stroke-width="2.5"/>
 
-    <line x1="96" y1="124" x2="112" y2="124" stroke="#E2E8F0" stroke-width="1.5"/>
-    <circle cx="84" cy="124" r="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
-    <text x="124" y="131" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="500" fill="#0B1220">Programming foundations</text>
-    <rect x="556" y="120" width="7" height="7" rx="1.5" fill="#2B5FD9"/>
+    <g fill="#F7F1E6" stroke="#A89878" stroke-width="2">
+      <polygon points="84,124 90,130 84,136 78,130"/>
+      <polygon points="84,186 90,192 84,198 78,192"/>
+      <polygon points="84,248 90,254 84,260 78,254"/>
+      <polygon points="84,310 90,316 84,322 78,316"/>
+      <polygon points="84,372 90,378 84,384 78,378"/>
+    </g>
+    <polygon points="84,434 91,441 84,448 77,441" fill="#B8860B" stroke="#B8860B" stroke-width="1"/>
 
-    <line x1="96" y1="186" x2="112" y2="186" stroke="#E2E8F0" stroke-width="1.5"/>
-    <circle cx="84" cy="186" r="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
-    <text x="124" y="193" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="500" fill="#0B1220">Frontend engineering</text>
-    <rect x="556" y="182" width="7" height="7" rx="1.5" fill="#CBD5E1"/>
-    <rect x="568" y="182" width="7" height="7" rx="1.5" fill="#2B5FD9"/>
+    <line x1="96" y1="130" x2="114" y2="130" stroke="#C9B99A" stroke-width="1.5"/>
+    <text x="124" y="136" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="500" fill="#2A241C">Programming foundations</text>
+    <rect x="556" y="126" width="8" height="8" rx="1" fill="#B8860B"/>
 
-    <line x1="96" y1="248" x2="112" y2="248" stroke="#E2E8F0" stroke-width="1.5"/>
-    <circle cx="84" cy="248" r="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
-    <text x="124" y="255" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="500" fill="#0B1220">Full-stack development</text>
-    <rect x="556" y="244" width="7" height="7" rx="1.5" fill="#CBD5E1"/>
-    <rect x="568" y="244" width="7" height="7" rx="1.5" fill="#CBD5E1"/>
-    <rect x="580" y="244" width="7" height="7" rx="1.5" fill="#2B5FD9"/>
+    <line x1="96" y1="192" x2="114" y2="192" stroke="#C9B99A" stroke-width="1.5"/>
+    <text x="124" y="198" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="500" fill="#2A241C">Frontend engineering</text>
+    <rect x="556" y="188" width="8" height="8" rx="1" fill="#C9B99A"/>
+    <rect x="568" y="188" width="8" height="8" rx="1" fill="#B8860B"/>
 
-    <line x1="96" y1="310" x2="112" y2="310" stroke="#E2E8F0" stroke-width="1.5"/>
-    <circle cx="84" cy="310" r="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
-    <text x="124" y="317" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="500" fill="#0B1220">Backend &amp; architecture</text>
-    <rect x="556" y="306" width="7" height="7" rx="1.5" fill="#CBD5E1"/>
-    <rect x="568" y="306" width="7" height="7" rx="1.5" fill="#CBD5E1"/>
-    <rect x="580" y="306" width="7" height="7" rx="1.5" fill="#CBD5E1"/>
-    <rect x="592" y="306" width="7" height="7" rx="1.5" fill="#2B5FD9"/>
+    <line x1="96" y1="254" x2="114" y2="254" stroke="#C9B99A" stroke-width="1.5"/>
+    <text x="124" y="260" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="500" fill="#2A241C">Full-stack development</text>
+    <rect x="556" y="250" width="8" height="8" rx="1" fill="#C9B99A"/>
+    <rect x="568" y="250" width="8" height="8" rx="1" fill="#C9B99A"/>
+    <rect x="580" y="250" width="8" height="8" rx="1" fill="#B8860B"/>
 
-    <line x1="96" y1="372" x2="112" y2="372" stroke="#E2E8F0" stroke-width="1.5"/>
-    <circle cx="84" cy="372" r="6" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
-    <text x="124" y="379" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="500" fill="#0B1220">Products &amp; systems</text>
-    <rect x="556" y="368" width="7" height="7" rx="1.5" fill="#CBD5E1"/>
-    <rect x="568" y="368" width="7" height="7" rx="1.5" fill="#CBD5E1"/>
-    <rect x="580" y="368" width="7" height="7" rx="1.5" fill="#CBD5E1"/>
-    <rect x="592" y="368" width="7" height="7" rx="1.5" fill="#CBD5E1"/>
-    <rect x="604" y="368" width="7" height="7" rx="1.5" fill="#2B5FD9"/>
+    <line x1="96" y1="316" x2="114" y2="316" stroke="#C9B99A" stroke-width="1.5"/>
+    <text x="124" y="322" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="500" fill="#2A241C">Backend &amp; architecture</text>
+    <rect x="556" y="312" width="8" height="8" rx="1" fill="#C9B99A"/>
+    <rect x="568" y="312" width="8" height="8" rx="1" fill="#C9B99A"/>
+    <rect x="580" y="312" width="8" height="8" rx="1" fill="#C9B99A"/>
+    <rect x="592" y="312" width="8" height="8" rx="1" fill="#B8860B"/>
 
-    <line x1="96" y1="434" x2="112" y2="434" stroke="#C3D2F5" stroke-width="1.5"/>
-    <circle cx="84" cy="434" r="6" fill="#2B5FD9" stroke="#2B5FD9" stroke-width="2"/>
-    <text x="124" y="441" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="600" fill="#0B1220">Data &#183; Economics &#183; Intelligent systems</text>
-    <rect x="556" y="430" width="7" height="7" rx="1.5" fill="#CBD5E1"/>
-    <rect x="568" y="430" width="7" height="7" rx="1.5" fill="#CBD5E1"/>
-    <rect x="580" y="430" width="7" height="7" rx="1.5" fill="#CBD5E1"/>
-    <rect x="592" y="430" width="7" height="7" rx="1.5" fill="#CBD5E1"/>
-    <rect x="604" y="430" width="7" height="7" rx="1.5" fill="#CBD5E1"/>
-    <rect x="616" y="430" width="7" height="7" rx="1.5" fill="#2B5FD9"/>
+    <line x1="96" y1="378" x2="114" y2="378" stroke="#C9B99A" stroke-width="1.5"/>
+    <text x="124" y="384" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="500" fill="#2A241C">Products &amp; systems</text>
+    <rect x="556" y="374" width="8" height="8" rx="1" fill="#C9B99A"/>
+    <rect x="568" y="374" width="8" height="8" rx="1" fill="#C9B99A"/>
+    <rect x="580" y="374" width="8" height="8" rx="1" fill="#C9B99A"/>
+    <rect x="592" y="374" width="8" height="8" rx="1" fill="#C9B99A"/>
+    <rect x="604" y="374" width="8" height="8" rx="1" fill="#B8860B"/>
 
-    <rect x="48" y="466" width="72" height="32" rx="16" fill="#2B5FD9"/>
-    <text x="84" y="487" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="1.2" fill="#FFFFFF">NOW</text>
+    <line x1="96" y1="441" x2="114" y2="441" stroke="#B8A88E" stroke-width="1.5"/>
+    <text x="124" y="447" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#2A241C">Data &#183; Economics &#183; Systems study</text>
+    <rect x="556" y="437" width="8" height="8" rx="1" fill="#C9B99A"/>
+    <rect x="568" y="437" width="8" height="8" rx="1" fill="#C9B99A"/>
+    <rect x="580" y="437" width="8" height="8" rx="1" fill="#C9B99A"/>
+    <rect x="592" y="437" width="8" height="8" rx="1" fill="#C9B99A"/>
+    <rect x="604" y="437" width="8" height="8" rx="1" fill="#C9B99A"/>
+    <rect x="616" y="437" width="8" height="8" rx="1" fill="#B8860B"/>
+
+    <rect x="48" y="466" width="72" height="32" rx="4" fill="#B8860B"/>
+    <text x="84" y="487" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" letter-spacing="1.4" fill="#FFFFFF">NOW</text>
   </g>
 
-  <rect x="0.5" y="0.5" width="699" height="555" rx="16" fill="none" stroke="#D9DFE7" stroke-width="1"/>
+  <rect x="0.5" y="0.5" width="699" height="555" rx="16" fill="none" stroke="#C9B99A" stroke-width="1"/>
 </svg>
