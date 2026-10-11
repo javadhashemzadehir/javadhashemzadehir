@@ -3,9 +3,11 @@
 </div>
 
 <div align="center">
-  <a href="https://javaddev.ir"><b>Website</b></a>
+  <a href="https://javadhashemzadeh.ir"><b>Website</b></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://t.me/codewithjavad"><b>Telegram</b></a>
+  <a href="https://t.me/javadhashemzadehir"><b>Telegram</b></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.instagram.com/javadhashemzadeh.ir"><b>Instagram</b></a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/javad-hashem"><b>GitHub</b></a>
   <!-- TODO: replace MOCK_LINKEDIN_URL with the real profile URL, then uncomment the next line -->
@@ -120,9 +122,15 @@ Trade-offs are the actual work: consistency against latency, flexibility against
 
 ## 🦅 Contact
 
-**Website:** [javaddev.ir](https://javaddev.ir)
+**Website:** [javadhashemzadeh.ir](https://javadhashemzadeh.ir)
 
-**Telegram:** [t.me/codewithjavad](https://t.me/codewithjavad)
+**Telegram:** [t.me/javadhashemzadehir](https://t.me/javadhashemzadehir)
+
+**Instagram:** [javadhashemzadeh.ir](https://www.instagram.com/javadhashemzadeh.ir)
+
+**Email:** [javadhashemzadeh78@gmail.com](mailto:javadhashemzadeh78@gmail.com)
+
+**Phone:** [+98 937 067 8064](tel:+989370678064)
 
 **GitHub:** [github.com/javad-hashem](https://github.com/javad-hashem)
 

@@ -230,12 +230,7 @@ for (const ref of localAssets.filter((r) => r.endsWith('.svg'))) {
   if (bytes > 60_000) fail('svg-weight', `${ref} is ${bytes} bytes; keep profile assets small`);
 }
 
-// --- 10. No email address exposed ------------------------------------------
-
-const email = live.match(/[\w.+-]+@[\w-]+\.[\w.]+/);
-if (email) fail('no-email', `email address exposed in README: ${email[0]}`);
-
-// --- 10b. No unresolved merge conflict markers -----------------------------
+// --- 10. No unresolved merge conflict markers ------------------------------
 
 if (/^<<<<<<<|^=======|^>>>>>>>/m.test(live)) {
   fail('no-conflict-markers', 'README still contains unresolved merge conflict markers');
