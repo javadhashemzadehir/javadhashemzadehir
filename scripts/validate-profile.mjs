@@ -57,15 +57,11 @@ const live = stripComments(readme);
 // --- 1. Required sections --------------------------------------------------
 
 const REQUIRED_SECTIONS = [
-  'About',
-  'Now',
-  'What I Build',
-  'Stack',
-  'How I Think About Software',
-  'The Path So Far',
-  'Beyond Code',
-  'Elsewhere',
-  'Connect',
+  '⚔️ About',
+  '🗡️ Skills',
+  '🏛️ Projects',
+  '📜 Philosophy',
+  '🦅 Contact',
 ];
 
 const headings = [...live.matchAll(/^##\s+(.+?)\s*$/gm)].map((m) => m[1]);
@@ -89,7 +85,7 @@ for (const m of live.matchAll(/!\[[^\]]*\]\(([^)\s]+)/g)) assetRefs.add(m[1]);
 const localAssets = [...assetRefs].filter((r) => !/^(https?:)?\/\//.test(r) && !r.startsWith('data:'));
 
 if (localAssets.length === 0) {
-  fail('local-assets', 'README references no local assets; expected the hero and journey SVGs');
+  fail('local-assets', 'README references no local assets; expected the banner and journey images');
 }
 
 for (const ref of localAssets) {
@@ -102,8 +98,7 @@ for (const ref of localAssets) {
 // --- 3. Both theme variants present ----------------------------------------
 
 for (const required of [
-  'assets/hero-light.svg',
-  'assets/hero-dark.svg',
+  'assets/banner.png',
   'assets/journey-light.svg',
   'assets/journey-dark.svg',
 ]) {
